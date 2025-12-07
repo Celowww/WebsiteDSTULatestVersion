@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - eXtraClass</title>
+    <link rel="stylesheet" href="services-style.css">
+    <link rel="stylesheet" href="carousel-calculator.css">
+    <script src="enhancements.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">EC</div>
+                    <span>eXtraClass</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
+                        <li><a href="services.html" class="active">Услуги</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="companies.html">Компаниям</a></li>
+                    </ul>
+                </nav>
+                <button class="auth-btn" onclick="openLoginModal()">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Войти
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Наши услуги</h1>
+                <p>Качественные факультативные курсы для вашего развития</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="services-container">
+                <div class="services-intro">
+                    <h2>НАШИ УСЛУГИ</h2>
+                    <p>Здесь мы собрали все ключевые факультативные курсы нашей компании, разбитые по категориям. Если необходимого вам курса нет в списке, напишите нам</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Программирование Python</h3>
+                        <p>Изучите один из самых популярных языков программирования. От основ до продвинутых тем, веб-разработка и анализ данных.</p>
+                        <div class="service-price">12 900 ₽</div>
+                        <button class="service-btn">Записаться</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Веб-дизайн и UX/UI</h3>
+                        <p>Создавайте красивые и удобные интерфейсы. Изучите Figma, Adobe XD и принципы современного дизайна.</p>
+                        <div class="service-price">14 500 ₽</div>
+                        <button class="service-btn">Записаться</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Маркетинг в соцсетях</h3>
+                        <p>Научитесь продвигать бренды в социальных сетях и привлекать целевую аудиторию. SMM стратегии и аналитика.</p>
+                        <div class="service-price">11 200 ₽</div>
+                        <button class="service-btn">Записаться</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Мобильная разработка</h3>
+                        <p>Создавайте приложения для iOS и Android. React Native, Flutter и нативные технологии разработки.</p>
+                        <div class="service-price">16 800 ₽</div>
+                        <button class="service-btn">Записаться</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Анализ данных</h3>
+                        <p>Освойте Python для анализа данных, визуализации и машинного обучения. Pandas, NumPy, Matplotlib.</p>
+                        <div class="service-price">13 900 ₽</div>
+                        <button class="service-btn">Записаться</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Искусственный интеллект</h3>
+                        <p>Введение в машинное обучение и нейронные сети. Практические проекты и реальные кейсы применения AI.</p>
+                        <div class="service-price">18 500 ₽</div>
+                        <button class="service-btn">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="fade-in">
+        <div class="container">
+            <div class="calculator-section">
+                <div class="section-title">
+                    <h2>Калькулятор стоимости обучения</h2>
+                    <p>Рассчитайте стоимость курса с учетом скидок для групп</p>
+                </div>
+                
+                <div class="calculator" id="courseCalculator">
+                    <div class="calculator-form">
+                        <div class="calculator-field">
+                            <label for="courseSelect">Выберите курс</label>
+                            <select id="courseSelect">
+                                <option value="python">Программирование Python (12,900 ₽)</option>
+                                <option value="design">Веб-дизайн и UX/UI (14,500 ₽)</option>
+                                <option value="marketing">Маркетинг в соцсетях (11,200 ₽)</option>
+                                <option value="mobile">Мобильная разработка (16,800 ₽)</option>
+                                <option value="data">Анализ данных (13,900 ₽)</option>
+                                <option value="ai">Искусственный интеллект (18,500 ₽)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calculator-field">
+                            <label for="hoursSelect">Продолжительность курса</label>
+                            <select id="hoursSelect">
+                                <option value="20">20 часов</option>
+                                <option value="40" selected>40 часов (стандарт)</option>
+                                <option value="60">60 часов</option>
+                                <option value="80">80 часов (полный)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calculator-field">
+                            <label for="studentsSelect">Количество студентов</label>
+                            <select id="studentsSelect">
+                                <option value="1">1 студент</option>
+                                <option value="2">2 студента</option>
+                                <option value="3">3 студента (-10%)</option>
+                                <option value="5">5 студентов (-15%)</option>
+                                <option value="10">10 студентов (-20%)</option>
+                            </select>
+                        </div>
+                        
+                        <button class="calculator-btn" onclick="initCalculator()">
+                            Пересчитать стоимость
+                        </button>
+                    </div>
+                    
+                    <div class="calculator-result">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Итоговая стоимость</h3>
+                        <div class="calculator-price" id="totalPrice">0 ₽</div>
+                        <p>В стоимость включены все учебные материалы</p>
+                        <p>Доступ к онлайн-платформе на 6 месяцев</p>
+                        <p>Сертификат об окончании курса</p>
+                        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 20px;">
+                            *Скидки применяются автоматически
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--light);">
+        <div class="container">
+            <div class="contact-section">
+                <h2 class="section-title">ОБРАТНАЯ СВЯЗЬ</h2>
+                <p class="text-center" style="margin-bottom: 40px; color: var(--gray); font-size: 1.1rem;">
+                    Задайте нам любой вопрос, напишите или запишитесь на курс.<br>Наши менеджеры ответят вам в ближайшее время.
+                </p>
+                
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Интересующий курс</label>
+                        <select id="course" required>
+                            <option value="">Выберите курс</option>
+                            <option value="python">Программирование Python</option>
+                            <option value="design">Веб-дизайн и UX/UI</option>
+                            <option value="marketing">Маркетинг в соцсетях</option>
+                            <option value="mobile">Мобильная разработка</option>
+                            <option value="data">Анализ данных</option>
+                            <option value="ai">Искусственный интеллект</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение</label>
+                        <textarea id="message" placeholder="Расскажите, что вас интересует..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.391426182224!2d39.71085931548131!3d47.22447997916156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9a5b0a0a0a5%3A0x7a1b0c0c0c0c0c0!2z0J_RgNC-0YHQvy4g0JPQsNCz0LDRgNC40L3QsCwgMSwg0KDQvtGB0YLQvtC90L7QtSwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sru!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <div class="text-center" style="margin-top: 40px;">
+                    <h3 style="color: var(--dark); margin-bottom: 20px;">Наши контакты</h3>
+                    <p style="color: var(--gray); margin-bottom: 10px; font-size: 1.1rem;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i>
+                        г. Ростов-на-Дону, ул. пл. Гагарина 1
+                    </p>
+                    <p style="color: var(--gray); font-size: 1.1rem;">
+                        <i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i>
+                        +7 (938) 343-23-23
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">EC</div>
+                        <span>eXtraClass</span>
+                    </div>
+                    <p>ExtraClass — платформа, где образование перестаёт быть рутиной. Мы понимаем: настоящий интерес нельзя «навязать». Мы создаем образовательные продукты, которые вдохновляют.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>МЕНЮ</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Проекты</a></li>
+                        <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Услуги</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Блог</a></li>
+                        <li><a href="companies.html"><i class="fas fa-building"></i> Компаниям</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>КУРСЫ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> Программирование Python</a></li>
+                        <li><a href="#"><i class="fas fa-palette"></i> Веб-дизайн</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> Маркетинг</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i> Мобильная разработка</a></li>
+                        <li><a href="#"><i class="fas fa-database"></i> Анализ данных</a></li>
+                        <li><a href="#"><i class="fas fa-robot"></i> Искусственный интеллект</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>МЫ В СОЦ.СЕТЯХ</h3>
+                    <p style="color: #B0B0B0; margin-bottom: 20px;">Подпишитесь на нас в соц.сетях чтобы не пропустить много нового и интересного о нас.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 eXtraClass. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+   <div id="loginModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center;">
+        <div style="background: white; border-radius: 20px; padding: 40px; max-width: 500px; width: 90%; position: relative;">
+            <button onclick="closeLoginModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--gray);">&times;</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--dark);">Вход в систему</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                <button class="tab-btn active" onclick="switchTab('login')" style="flex: 1; padding: 12px; border: none; background: var(--primary); color: white; border-radius: 8px; cursor: pointer; font-weight: 600;">Вход</button>
+                <button class="tab-btn" onclick="switchTab('register')" style="flex: 1; padding: 12px; border: 1px solid var(--primary); background: white; color: var(--primary); border-radius: 8px; cursor: pointer; font-weight: 600;">Регистрация</button>
+            </div>
+            
+            <div id="loginTab">
+                <form id="loginForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px; transition: border 0.3s;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Пароль</label>
+                        <input type="password" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px; transition: border 0.3s;">
+                    </div>
+                    <button type="submit" style="background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Войти</button>
+                </form>
+            </div>
+            
+            <div id="registerTab" style="display: none;">
+                <form id="registerForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Тип аккаунта</label>
+                        <select required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                            <option value="">Выберите тип аккаунта</option>
+                            <option value="student">Студент</option>
+                            <option value="teacher">Преподаватель</option>
+                            <option value="admin">Администратор</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Имя и фамилия</label>
+                        <input type="text" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Пароль</label>
+                        <input type="password" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <button type="submit" style="background: var(--secondary); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (tab === 'login') {
+                document.getElementById('loginTab').style.display = 'block';
+                document.getElementById('registerTab').style.display = 'none';
+            } else {
+                document.getElementById('loginTab').style.display = 'none';
+                document.getElementById('registerTab').style.display = 'block';
+            }
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('loginModal');
+            if (event.target === modal) {
+                closeLoginModal();
+            }
+        }
+
+        document.getElementById('loginForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Вход выполнен успешно!');
+            closeLoginModal();
+        }
+
+        document.getElementById('registerForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Регистрация завершена! Проверьте вашу почту.');
+            closeLoginModal();
+        }
+    </script>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+
+        document.querySelectorAll('.service-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const courseName = this.closest('.service-card').querySelector('h3').textContent;
+                alert(`Вы выбрали курс: ${courseName}\nПеренаправляем на страницу оформления...`);
+            });
+        });
+    </script>
+</body>
+</html>

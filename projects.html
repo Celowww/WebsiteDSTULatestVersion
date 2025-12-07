@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - eXtraClass</title>
+    <link rel="stylesheet" href="projects-style.css">
+    <link rel="stylesheet" href="carousel-calculator.css">
+    <script src="enhancements.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">EC</div>
+                    <span>eXtraClass</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="projects.html" class="active">Проекты</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="companies.html">Компаниям</a></li>
+                    </ul>
+                </nav>
+                <button class="auth-btn" onclick="openLoginModal()">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Войти
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Наши проекты</h1>
+                <p>Инновационные образовательные решения для будущего</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Текущие проекты</h2>
+                <p>Мы создаем инновационные образовательные решения для школ, вузов и частных учреждений</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="project-content">
+                        <h3>Образование 2.0</h3>
+                        <p>Интерактивные методики для школьников и студентов. Игровой подход, AR/VR, микрообучение и современные технологии для эффективного образования.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar"></i> Запуск: Март 2025</span>
+                            <span class="project-status">Активный</span>
+                        </div>
+                        <button class="project-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="project-content">
+                        <h3>Лаборатория будущего</h3>
+                        <p>STEM-курсы для детей от 8 лет: робототехника, программирование, биология, химия. Практические занятия и проектная работа в современных лабораториях.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar"></i> Запуск: Январь 2025</span>
+                            <span class="project-status">Активный</span>
+                        </div>
+                        <button class="project-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="project-content">
+                        <h3>Умный университет</h3>
+                        <p>Цифровая платформа для вузов: расписания, тесты, чаты, аналитика успеваемости. Все необходимое для современного образования в одном месте.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar"></i> Запуск: Ноябрь 2024</span>
+                            <span class="project-status">Завершен</span>
+                        </div>
+                        <button class="project-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd6d23d67b25?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="project-content">
+                        <h3>AI-репетитор</h3>
+                        <p>Искусственный интеллект для персонализированного обучения. Адаптивная система, которая подстраивается под уровень знаний каждого студента.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar"></i> Запуск: Май 2025</span>
+                            <span class="project-status">В разработке</span>
+                        </div>
+                        <button class="project-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="project-content">
+                        <h3>VR-классы</h3>
+                        <p>Виртуальная реальность для immersive обучения. От виртуальных экскурсий до сложных научных экспериментов в безопасной среде.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar"></i> Запуск: Сентябрь 2024</span>
+                            <span class="project-status">Завершен</span>
+                        </div>
+                        <button class="project-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="project-content">
+                        <h3>Цифровой кампус</h3>
+                        <p>Комплексное решение для цифровизации учебных заведений. От электронных журналов до систем безопасности и smart-инфраструктуры.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar"></i> Запуск: Февраль 2025</span>
+                            <span class="project-status">Активный</span>
+                        </div>
+                        <button class="project-btn">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Завершенных проектов</p>
+                </div>
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Образовательных учреждений</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50k+</h3>
+                    <p>Довольных студентов</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15</h3>
+                    <p>Стран присутствия</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши партнеры</h2>
+                <p>Мы сотрудничаем с ведущими образовательными учреждениями и технологическими компаниями</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; align-items: center; opacity: 0.7;">
+                <div style="text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--gray);">ДГТУ</div>
+                <div style="text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--gray);">НАМБА</div>
+                <div style="text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--gray);">ВАН</div>
+                <div style="text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--gray);">И</div>
+                <div style="text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--gray);">ЭТО</div>
+                <div style="text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--gray);">ПРАВДА</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">EC</div>
+                        <span>eXtraClass</span>
+                    </div>
+                    <p>ExtraClass — платформа, где образование перестаёт быть рутиной. Мы понимаем: настоящий интерес нельзя «навязать». Мы создаем образовательные продукты, которые вдохновляют.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>МЕНЮ</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Проекты</a></li>
+                        <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Услуги</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Блог</a></li>
+                        <li><a href="companies.html"><i class="fas fa-building"></i> Компаниям</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>КУРСЫ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> Программирование Python</a></li>
+                        <li><a href="#"><i class="fas fa-palette"></i> Веб-дизайн</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> Маркетинг</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i> Мобильная разработка</a></li>
+                        <li><a href="#"><i class="fas fa-database"></i> Анализ данных</a></li>
+                        <li><a href="#"><i class="fas fa-robot"></i> Искусственный интеллект</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>МЫ В СОЦ.СЕТЯХ</h3>
+                    <p style="color: #B0B0B0; margin-bottom: 20px;">Подпишитесь на нас в соц.сетях чтобы не пропустить много нового и интересного о нас.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 eXtraClass. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+   <div id="loginModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center;">
+        <div style="background: white; border-radius: 20px; padding: 40px; max-width: 500px; width: 90%; position: relative;">
+            <button onclick="closeLoginModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--gray);">&times;</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--dark);">Вход в систему</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                <button class="tab-btn active" onclick="switchTab('login')" style="flex: 1; padding: 12px; border: none; background: var(--primary); color: white; border-radius: 8px; cursor: pointer; font-weight: 600;">Вход</button>
+                <button class="tab-btn" onclick="switchTab('register')" style="flex: 1; padding: 12px; border: 1px solid var(--primary); background: white; color: var(--primary); border-radius: 8px; cursor: pointer; font-weight: 600;">Регистрация</button>
+            </div>
+            
+            <div id="loginTab">
+                <form id="loginForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px; transition: border 0.3s;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Пароль</label>
+                        <input type="password" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px; transition: border 0.3s;">
+                    </div>
+                    <button type="submit" style="background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Войти</button>
+                </form>
+            </div>
+            
+            <div id="registerTab" style="display: none;">
+                <form id="registerForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Тип аккаунта</label>
+                        <select required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                            <option value="">Выберите тип аккаунта</option>
+                            <option value="student">Студент</option>
+                            <option value="teacher">Преподаватель</option>
+                            <option value="admin">Администратор</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Имя и фамилия</label>
+                        <input type="text" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Пароль</label>
+                        <input type="password" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <button type="submit" style="background: var(--secondary); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (tab === 'login') {
+                document.getElementById('loginTab').style.display = 'block';
+                document.getElementById('registerTab').style.display = 'none';
+            } else {
+                document.getElementById('loginTab').style.display = 'none';
+                document.getElementById('registerTab').style.display = 'block';
+            }
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('loginModal');
+            if (event.target === modal) {
+                closeLoginModal();
+            }
+        }
+
+        document.getElementById('loginForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Вход выполнен успешно!');
+            closeLoginModal();
+        }
+
+        document.getElementById('registerForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Регистрация завершена! Проверьте вашу почту.');
+            closeLoginModal();
+        }
+    </script>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        document.querySelectorAll('.project-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const projectName = this.closest('.project-card').querySelector('h3').textContent;
+                alert(`Проект: ${projectName}\nПодробная информация скоро будет доступна!`);
+            });
+        });
+    </script>
+</body>
+</html>

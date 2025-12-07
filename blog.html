@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - eXtraClass</title>
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="stylesheet" href="carousel-calculator.css">
+    <script src="enhancements.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">EC</div>
+                    <span>eXtraClass</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="blog.html" class="active">Блог</a></li>
+                        <li><a href="companies.html">Компаниям</a></li>
+                    </ul>
+                </nav>
+                <button class="auth-btn" onclick="openLoginModal()">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Войти
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Блог</h1>
+                <p>Публикации, статьи и новости компании</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="categories">
+                <button class="category-btn active">Все статьи</button>
+                <button class="category-btn">Образование</button>
+                <button class="category-btn">Технологии</button>
+                <button class="category-btn">Карьера</button>
+                <button class="category-btn">Советы</button>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 15 октября 2025</span>
+                            <span><i class="far fa-clock"></i> 5 мин чтения</span>
+                        </div>
+                        <h3>Как сделать обучение увлекательным?</h3>
+                        <p>Мы собрали лучшие практики, которые помогают превратить скучный урок в захватывающее приключение. От геймификации до AR-технологий — всё, что работает в современном образовании.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 10 октября 2025</span>
+                            <span><i class="far fa-clock"></i> 7 мин чтения</span>
+                        </div>
+                        <h3>Новые технологии в образовании 2025</h3>
+                        <p>AR, VR, AI — как они меняют подход к обучению и почему это важно для современных школ и вузов. Примеры внедрения и результаты исследований эффективности.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 5 октября 2025</span>
+                            <span><i class="far fa-clock"></i> 4 мин чтения</span>
+                        </div>
+                        <h3>Интервью с нашими студентами</h3>
+                        <p>Что им нравится в eXtraClass? Как они достигают успеха? Читайте в новом выпуске нашего блога — настоящие истории успеха и откровенные рассказы.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 28 сентября 2025</span>
+                            <span><i class="far fa-clock"></i> 6 мин чтения</span>
+                        </div>
+                        <h3>Будущее онлайн-образования</h3>
+                        <p>Тренды и прогнозы на 2026 год. Как изменится дистанционное обучение и какие навыки будут востребованы на рынке труда в ближайшие годы.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 20 сентября 2025</span>
+                            <span><i class="far fa-clock"></i> 8 мин чтения</span>
+                        </div>
+                        <h3>Data Science для начинающих</h3>
+                        <p>С чего начать изучение анализа данных? Подробный гайд по инструментам, курсам и первым шагам в одной из самых перспективных IT-профессий.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 15 сентября 2025</span>
+                            <span><i class="far fa-clock"></i> 5 мин чтения</span>
+                        </div>
+                        <h3>Советы по тайм-менеджменту для студентов</h3>
+                        <p>Как успевать учиться, работать и отдыхать? Проверенные методики управления временем от наших успешных выпускников и экспертов.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">EC</div>
+                        <span>eXtraClass</span>
+                    </div>
+                    <p>ExtraClass — платформа, где образование перестаёт быть рутиной. Мы понимаем: настоящий интерес нельзя «навязать». Мы создаем образовательные продукты, которые вдохновляют.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>МЕНЮ</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Проекты</a></li>
+                        <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Услуги</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Блог</a></li>
+                        <li><a href="companies.html"><i class="fas fa-building"></i> Компаниям</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>КУРСЫ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> Программирование Python</a></li>
+                        <li><a href="#"><i class="fas fa-palette"></i> Веб-дизайн</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> Маркетинг</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i> Мобильная разработка</a></li>
+                        <li><a href="#"><i class="fas fa-database"></i> Анализ данных</a></li>
+                        <li><a href="#"><i class="fas fa-robot"></i> Искусственный интеллект</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>МЫ В СОЦ.СЕТЯХ</h3>
+                    <p style="color: #B0B0B0; margin-bottom: 20px;">Подпишитесь на нас в соц.сетях чтобы не пропустить много нового и интересного о нас.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 eXtraClass. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+   <div id="loginModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center;">
+        <div style="background: white; border-radius: 20px; padding: 40px; max-width: 500px; width: 90%; position: relative;">
+            <button onclick="closeLoginModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--gray);">&times;</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--dark);">Вход в систему</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                <button class="tab-btn active" onclick="switchTab('login')" style="flex: 1; padding: 12px; border: none; background: var(--primary); color: white; border-radius: 8px; cursor: pointer; font-weight: 600;">Вход</button>
+                <button class="tab-btn" onclick="switchTab('register')" style="flex: 1; padding: 12px; border: 1px solid var(--primary); background: white; color: var(--primary); border-radius: 8px; cursor: pointer; font-weight: 600;">Регистрация</button>
+            </div>
+            
+            <div id="loginTab">
+                <form id="loginForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px; transition: border 0.3s;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Пароль</label>
+                        <input type="password" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px; transition: border 0.3s;">
+                    </div>
+                    <button type="submit" style="background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Войти</button>
+                </form>
+            </div>
+            
+            <div id="registerTab" style="display: none;">
+                <form id="registerForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Тип аккаунта</label>
+                        <select required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                            <option value="">Выберите тип аккаунта</option>
+                            <option value="student">Студент</option>
+                            <option value="teacher">Преподаватель</option>
+                            <option value="admin">Администратор</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Имя и фамилия</label>
+                        <input type="text" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark);">Пароль</label>
+                        <input type="password" required style="width: 100%; padding: 15px; border: 2px solid var(--border); border-radius: 10px; font-size: 16px;">
+                    </div>
+                    <button type="submit" style="background: var(--secondary); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (tab === 'login') {
+                document.getElementById('loginTab').style.display = 'block';
+                document.getElementById('registerTab').style.display = 'none';
+            } else {
+                document.getElementById('loginTab').style.display = 'none';
+                document.getElementById('registerTab').style.display = 'block';
+            }
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('loginModal');
+            if (event.target === modal) {
+                closeLoginModal();
+            }
+        }
+
+        document.getElementById('loginForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Вход выполнен успешно!');
+            closeLoginModal();
+        }
+
+        document.getElementById('registerForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Регистрация завершена! Проверьте вашу почту.');
+            closeLoginModal();
+        }
+    </script>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за подписку! Проверьте вашу почту для подтверждения.');
+            this.reset();
+        });
+
+        document.querySelectorAll('.read-more').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const articleTitle = this.closest('.blog-card').querySelector('h3').textContent;
+                alert(`Статья "${articleTitle}" скоро будет доступна для чтения!`);
+            });
+        });
+    </script>
+</body>
+</html>
+
